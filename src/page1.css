@@ -1,0 +1,68 @@
+.header{
+    height: 10vh;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-style: bold;
+    font-size: 2vmax;
+  }
+  .users{
+    display: flex;
+    flex-direction: column;
+  }
+  .user{
+    display: flex;
+    align-items: center;
+    padding: 0.5vmax;
+    margin: 0vmax 1vmax;
+    border-bottom: 0.1px solid grey;
+  }
+  .user img{
+    width: 5vmax;
+    border-radius: 100%;
+    margin: 0 2vmax;
+  }
+
+#name{
+  font-size: 20px;
+  font-style: bold;
+  margin-right: 1vmax;
+}
+.svg svg{
+  width: 1vmax;
+  position: absolute;
+  right: 10%;
+}
+
+#btn{
+  width: 10vw;
+  margin: auto;
+  padding: 10px 12px;
+  background-color: #0000ff;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  font-size: bold;
+  margin-top: 1vmax;
+  cursor: pointer;
+}
+@media screen and (min-width:664px) and (max-width:818px) {
+  #btn{
+    width: 20vw;
+  }
+  .user{
+    margin-top: 0.5vmax;
+  }
+}
+@media screen and (min-width:360px) and (max-width:664px){
+  #btn{
+    width: 40vw;
+    margin-top: 3vmax;
+  }
+  .user{
+    margin-top: 1.5vmax;
+  }
+}
