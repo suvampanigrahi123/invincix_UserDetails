@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import "./page1.css"
+import "../css/page1.css"
 const Page1 = () => {
   const [users,setUsers]=useState([])
   const [loading, setloading] = useState(false)
@@ -21,6 +21,7 @@ const Page1 = () => {
   }
   useEffect(()=>{
     fetchusers()
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   },[page])
  const handlepage=()=>{
    if(page===1){
@@ -36,7 +37,7 @@ const Page1 = () => {
     </div>
     <div className='users'>
         {
-          loading ? <>hii</>:
+          loading ? <h2 style={{textAlign:'center'}}>Connect Your Network</h2>:
           ( users.map((val,key)=>(
               <div key={val.id} className='user'>
               {/* <div>

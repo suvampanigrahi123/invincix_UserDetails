@@ -1,7 +1,7 @@
 import "./App.css"
-import Page1 from "./Page1"
+import Page1 from "./Components/Page1"
 import { BrowserRouter as Router ,Route,Routes} from "react-router-dom"
-import UserProfile from "./userProfile"
+import UserProfile from "./Components/userProfile"
 function App(){
   return(
     <Router>

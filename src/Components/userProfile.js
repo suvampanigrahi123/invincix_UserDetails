@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
-import './userProfile.css'
+import '../css/userProfile.css'
 const UserProfile=()=>{
     const {id}=useParams()
     const [userdetail, setuserdetail] = useState([])
@@ -19,6 +19,7 @@ const UserProfile=()=>{
 
     useEffect(()=>{
         fetchUserDetails();
+        //eslint-disable-next-line react-hooks/exhaustive-deps
     },[id])
     return(
         <div className="Profile">
